@@ -1,0 +1,12 @@
+{
+	"spacing": 4,
+		//
+		"height": 26,
+	"modules-left":["hyprland/workspaces", "hyprland/window"],
+	"modules-right":["cpu", "memory", "temperature", "clock"],
+
+	"cpu": {
+	    "format": "[CPU:{usage}%]",
+	    "tooltip": false
+	},
+}
