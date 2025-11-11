@@ -1,0 +1,1 @@
+notify-send -t 4000 " Memory Monitor" "$(ps axch -o cmd,%mem | awk '{cmd[$1]+=$2} END {for (i in cmd) print i, cmd[i]}' | sort -nrk2 2>/dev/null | head)"

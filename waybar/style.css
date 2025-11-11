@@ -1,102 +1,45 @@
 * {
-    font-family: "monospace";
-    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    font-family: 'JetBrains Mono', 'Font Awesome 6 Free';
+    font-size: 12pt;
+    min-height: 0;
 }
 
-
-window#waybar { 
-    background-color: #225877; 
-    color: #ffffff;    
-}
-
-
-.modules-left {
-	background-color: #323232;
-	padding: 0px 0px 0px 0px;
-}
-
-
-.modules-right {
-	background-color: #323232;
-	padding: 0px 5px 0px 0px;
-}
-
-
-#custom-scratch {
-	background-color: #323232;
-	color: #b8b8b8;
-	padding: 0px 9px 0px 9px;
-}
-
-
-#workspaces {
+#waybar {
+    background: #2d353b;
+    color: #d3c6aa;
 }
 
 
 #workspaces button {
-	padding: 0px 11px 0px 11px; 
- 	min-width: 1px;
-	color: #888888;
+    padding: 0 5px;
+    background: #2d353b;
+    color: #dbbc7f;
 }
 
-
-#workspaces button.focused { 
-	padding: 0px 11px 0px 11px; 
-	background-color: #285577;
-	color: #ffffff;
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
 }
 
-
-#mode { 
-	 background-color: #900000;
-	 color: #ffffff;
-     padding: 0px 5px 0px 5px;
-     border: 1px solid #2f343a;
+#workspaces button.focused {
+    background: #a7c080;
+    color: #000000;
 }
 
-
-#window {
-	 color: #ffffff;
-	 background-color: #285577;
-     padding: 0px 10px 0px 10px;
+#mpris {
+	padding-left: 10px
 }
 
-
-window#waybar.empty #window {
-	background-color: transparent;
-	color: transparent;
+#wireplumber,#battery,#network,#cpu,#memory,#clock,#custom {
+	padding-right: 10px
 }
 
-
-window#waybar.empty {
-	background-color: #323232;
+#battery.charging,#network.wifi,#network.ethernet {
+	color: #a7c080;
 }
-
-
-#network, #temperature, #backlight, #pulseudio, #battery {
-    padding: 0px 15px 0px 15px;
-}
-    
-
-#clock {
-	margin: 0px 15px 0px 15px;
-}
-
-
-#tray{
-   padding: 0px 8px 0px 5px;
-   margin: 0px 5px 0px 5px;
-}
-
-
-#battery.critical {
-   color: #ff5555;
-}
-
 
 #network.disconnected {
-    color: #ff5555;
-}
-
-
-
+	color: #e69875;
+}	
