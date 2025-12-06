@@ -1,1 +1,2 @@
+#!/bin/sh
 notify-send -t 4000 " CPU Monitor" "$(ps axch -o cmd,%cpu | awk '{cmd[$1]+=$2} END {for (i in cmd) print i, cmd[i]}' | sort -nrk2  | head)\\n(100% per core)"
