@@ -1,45 +1,46 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: 'JetBrains Mono', 'Font Awesome 6 Free';
+    font-family: 'Adwaita Mono', 'Font Awesome 7 Free';
     font-size: 12pt;
-    min-height: 0;
+    min-height: 0
 }
 
 #waybar {
     background: #2d353b;
-    color: #d3c6aa;
+    color: #d3c6aa
 }
 
 
 #workspaces button {
     padding: 0 5px;
     background: #2d353b;
-    color: #dbbc7f;
+    color: #dbbc7f
 }
 
 #workspaces button:hover {
   box-shadow: inherit;
-  text-shadow: inherit;
+  text-shadow: inherit
 }
 
 #workspaces button.focused {
-    background: #a7c080;
-    color: #000000;
+    background: #7fbbb3;
+    color: #000000
 }
 
 #mpris {
 	padding-left: 10px
 }
 
-#wireplumber,#battery,#network,#cpu,#memory,#clock,#custom {
+#wireplumber,#upower,#network,#cpu,#memory,#clock,#custom-power {
 	padding-right: 10px
 }
 
-#battery.charging,#network.wifi,#network.ethernet {
-	color: #a7c080;
+#network.wifi,#network.ethernet {
+	color: #a7c080
 }
 
 #network.disconnected {
 	color: #e69875;
+    background: #2d353b
 }	
